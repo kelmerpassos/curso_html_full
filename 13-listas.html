@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <style>
+        li ul{
+            height: 0;  
+            overflow: hidden;
+            transition: height 0.2s;
+        }     
+        li:hover ul{
+            height: 50px;
+        }
+        
+        td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Listagem 1</li>
+        <li>Listagem 2</li>
+        <li>Listagem 3
+            <ul>
+                <li>Listagem 3.1</li>
+                <li>Listagem 3.2</li>
+                <li>Listagem 3.3</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <table>
+        <caption> Teste iramar</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan=2>Adriel black</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Jorge</td>
+                <td>Augusto</td>
+            </tr>
+            <tr>
+                <td>Jorge</td>
+                <td>Augusto</td>
+            </tr>
+            <tr>
+                <td>Jorge</td>
+                <td>Augusto</td>
+            </tr>
+            <tr>
+                <td>Jorge</td>
+                <td>Augusto</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body{
+    font-family: arials, ans-serif;
+    background: #ccc;
+    margin: 0;
+}
+
+.hero{
+    background-image: url(imagens/bg-3.jpg);
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 800px;
+    border-top: 1px solid transparent;
+}
+
+.hero-content{
+    text-align: center;
+    color: white;
+    margin-top: 300px;
+}
+
+.hero-content h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    text-shadow: 3px 3px 3px #333;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.content-section{
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+    overflow: auto;
+}
+
+.rodape{
+    background-color: rgba(0, 0, 0, 0.48);
+    text-align: center;
+    color: white;
+    height: 60px;
+    margin-top: 15px;
+    line-height: 60px;
+}
+
+.rodape p{
+    font-size: 14px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.content-title{
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: #c4c4c4;
+    border-bottom-width: 2px;
+}
+
+.content-title h2{
+    margin: 0px;
+}
+
+.card{
+    width: 33%;
+    float: left;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.41);
+    margin-left: 0.3%;
+}
+
+.card-text{
+    color: white;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+}
+
+.hero nav{
+    text-align: right;
+    margin: 20px 100px 0px 0px;
+}
+
+.hero nav li{
+    display: inline-block;   
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+.hero nav a{
+    text-decoration: none;
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.23); 
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px
+}
+
+.hero nav a:hover{
+    background-color: rgba(0, 0, 0, 0.49);
+}
+
+.hero-text{
+    background-color: rgba(0, 0, 0, 0.69);
+    border-bottom: 1px solid white;
+    display: inline-block;
+    padding: 10px;
+}
+
+
