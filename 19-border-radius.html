@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kelmer Passos">
+    <meta name="description" content="Descrição">
+    <meta name="keywords" content="html5, tecnologia">
+    <title>Document</title>
+    <style>
+        @font-face{
+            font-family: 'nadia';
+            src: url("/fontes/nadia/nadia-serif.eof");
+            src: url("/fontes/nadia/nadia-serif.eof") format("svg"),
+            url("/fontes/nadia/nadia-serif.eof") format("ttf"),
+            url("/fontes/nadia/nadia-serif.eof") format("woff");
+        }
+
+        #bloco{
+            margin: 150px auto;
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            border-radius: 100px 0px / 100px 0px;
+            box-shadow: 10px 10px 2px -5px rgb(73, 73, 73),
+            -20px -20px 0px 0px blue,
+            20px 20px 0px 0px rgb(190, 211, 2);
+
+            transition-property: box-shadow, border-radius, width, height;  
+            transition-duration: 0.5s, 0.5s, 0.7s, 0.7s; 
+            transition-timing-function: ease;
+        }
+
+        #bloco:hover{
+            box-shadow: none;
+            border-radius: 150px 150px;
+            width: 300px;
+            height: 300px;
+        }
+
+        html{
+            height: 100%;
+        }
+        body{
+            background-image: linear-gradient(to right bottom,rgb(190, 211, 2) 50%, blue 50%);
+        }
+        h1{
+            text-align: center;
+            font-family: nadia;
+            text-shadow: -1px 1px rgb(22, 22, 22),
+            -2px 2px rgb(51, 51, 51),
+            -3px 3px rgb(80, 80, 80),
+            -4px 4px rgb(124, 124, 124);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        CSS Efeitos
+    </h1>
+
+    <div id="bloco">
+    
+    </div>
+
+</body>
+</html>

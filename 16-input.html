@@ -1,31 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="utf-8">
+    <style>
+        .input-block{
+            display: block;
+            margin-bottom: 10px;
+        }
+        form{
+            width: 500px;
+            margin: 100px auto;
+        }
+        .msn{
+            resize: none;
+        }
+    </style>
 </head>
 <body>
     
-    <form>
+    <form action="#">
         <fieldset>
             <legend>cadastro de usuário</legend>
-            <input type="text" placeholder="nome">
-            <input type="text" placeholder="sobrenome">
-            <input type="text" placeholder="Mae">
+            <input type="text" placeholder="nome" class="input-block" required>
+            <input type="number" placeholder="idade" max="97" min="14" class="input-block">
+            <input type="date" value="2019-01-02" max="01-01-2066" min="01-01-1966" class="input-block">
+            <label class="input-block">
+                <input type="radio" name="sexo" value="M">
+                Masculino
+            </label>
+            <label class="input-block">
+                <input type="radio" name="sexo" value="F">
+                Feminino
+            </label>
+            <select name="estado">
+                <option value="SP">São Paulo</option>
+                <option value="BA" selected>Bahia</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            <select name="estado" multiple size="2">
+                <option value="SP">São Paulo</option>
+                <option value="BA" selected>Bahia</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </fieldset> 
+        <fieldset>
+            <legend>Cursos</legend>
+            <label>
+                <input type="checkbox" name="html" value="html">
+                HTML
+            </label>
+            <label>
+                <input type="checkbox" name="css" value="css">
+                CSS
+            </label>
+            <label>
+                <input type="checkbox" name="js" value="js">
+                JavaScript
+            </label>
         </fieldset>
         <fieldset>
-            <legend>cadastro de usuário</legend>
-            <input type="text" placeholder="nome">
-            <input type="text" placeholder="sobrenome">
-            <input type="text" placeholder="Mae">
+            <legend>Mensagens</legend>
+            <textarea name="msn" cols="30" rows="10" readonly class="msn">Ligue para a gente, antes de finalizar
+            </textarea>
         </fieldset>
         <fieldset>
-            <legend>cadastro de usuário</legend>
-            <input type="text" placeholder="nome">
-            <input type="text" placeholder="sobrenome">
-            <input type="text" placeholder="Mae">
+            <legend>Documentos</legend>
+            <input type="file" name="file">
         </fieldset>
-        
+        <fieldset>
+            <legend>Outros</legend>
+            <input type="color">
+            <input type="range" min="2" max="20" step="2">
+            <input text="text" placeholder="Sigla" maxlength="3">
+        </fieldset>
+        <div>
+            <input type="submit" value="Salvar"> 
+            <input type="button">
+            <input type="reset">
+        </div>  
     </form>
-    
 </body>
 </html>
