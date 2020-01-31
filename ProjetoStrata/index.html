@@ -6,18 +6,21 @@
     <meta name="description" content="Ainda não sei">
     <meta name="keywords" content="html">
     <title>Projeto Strata</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">   
+    <script src="https://kit.fontawesome.com/6273b6a365.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="main-header">
         <a href="index.html" class="main-header-link">
-            <img src="#" alt="texto qualquer">
+            <img src="./images/avatar.jpg" alt="texto qualquer">
         </a>
-        <h1>
+        <h1 class="main-header-title">
             Trabalhos e groselhas de <br> 
             <strong>Kelmer Passos</strong>, <br> 
             um zé ninguém qualquer <br> 
-            Retirado de <a href="http://html5up.net">html5up.net</a>     
+            Retirado de <a href="http://html5up.net" class="main-header-link">html5up.net</a>     
         </h1>
     </header>
     <main class="main-content">
@@ -77,40 +80,364 @@
             <p>Provident dolore officiis. Unde quae voluptatibus atque eos magnam excepturi ratione. Nesciunt nihil est quia.
             Illo reiciendis et nesciunt reiciendis ducimus eligendi possimus animi possimus. Totam enim soluta dicta est.
             Ratione voluptatibus tenetur impedit molestiae aut eaque voluptate. Sint assumenda aut doloremque ut. Perferendis quis a.</p>
-            <form action="#" method="POST">
-                <label for="nome">Name</label>
-                <input id="nome" name="nome" type="text">
-
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email">
-                
-                <label for="mensagem">Digite sua mensagem</label>
-                <textarea name="mensagem" id="mensagem">
-
-                <input type="submit" value="Enviar">
-            </form> 
+            <div class="row">
+                <div class="col-8">
+                    <form action="#" method="POST">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="nome">Name</label>
+                                <input id="nome" name="nome" type="text">
+                            </div>    
+                            <div class="col-6">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email">    
+                            </div>    
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="mensagem">Digite sua mensagem</label>
+                                <textarea name="mensagem" id="mesagem"></textarea>   
+                            </div>
+                        </div>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+                <div class="col-4">
+                    <address>
+                        <p>
+                            <span>Endereço</span>
+                            68574 055 Estefania Canyon, East Biankaton, Avon
+                        </p>
+                        <p>
+                            <span>Telefone</span>
+                            1-764-020-5748 x3142
+                        </p>
+                        <p>
+                            <span>Email</span>
+                            Ball@gmail.com
+                        </p>
+                    </address>  
+                </div>
+            </div>
             
-            <address>
-                <p>
-                    <span>Endereço</span>
-                    68574 055 Estefania Canyon, East Biankaton, Avon
-                </p>
-                <p>
-                    <span>Telefone</span>
-                    1-764-020-5748 x3142
-                </p>
-                <p>
-                    <span>Email</span>
-                    Ball@gmail.com
-                </p>
-            </address>
         </section>
 
         <section class="main-content-section">
             <h3>Elements</h3>
+            <h4>Títulos</h4>
+            <h1>Título H1</h1>
+            <h2>Título H2</h2>
+            <h3>Título H3</h1>
+            <h4>Título H4</h4>
+            <h5>Título H5</h5>
+            <h6>Título H5</h6>
+
             <h4>Text</h4>
             <p>
-                
+                Possimus <b>bold</b> nam quia. Itaque <strong>strong</strong> magnam <i>italic</i> temporibus <em>emphosized</em> nesciunt. 
+                <sup>Superscript</sup> velit rerum <sub>subscript</sub> sed pariatur ipsa aperiam sit ut.  
+                <u>Underline</u> hic magnam ratione corporis id fugit aut eius. 
+                Et doloribus architecto est <code>code : for (;;) {...}</code> nesciunt <a href="#">this a link</a>.
+            </p>
+            <blockquote cite="www.wikipedia.com">
+                Possimus assumenda aperiam possimus eum voluptas ut et. Atque deleniti deserunt nemo nobis occaecati qui qui. Nam rerum sequi optio animi aut distinctio non et quia. Nihil cupiditate maiores corrupti harum perspiciatis recusandae dolores. Qui blanditiis odit dolore doloremque deleniti quia porro a.
+            </blockquote>
+
+            <pre>
+                <code>
+    if nome='adriel':
+        pass
+                </code>
+            </pre>
+            <h4>Lists</h4>
+            
+            <div class="row">
+                <div class="col-6">
+                    <h5>Ordenada</h5>
+                    <ol>
+                        <li>earum quia magni</li>
+                        <li>earum quia magni</li>
+                        <li>earum quia magni</li>
+                    </ol>
+                    <h5>Não Ordenada</h5>
+                    <ul>
+                        <li>earum quia magni</li>
+                        <li>earum quia magni</li>
+                        <li>earum quia magni</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <h5>Alternate</h5>
+                    <ul class="ul-alternate">
+                        <li>earum quia magni</li>
+                        <li>earum quia magni</li>
+                        <li>earum quia magni</li>
+                    </ul>
+        
+                    <h5>Icones</h5>
+                    <ul class="ul-icons">
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-facebook"></i></li>    
+                    </ul>
+                </div>
+            </div>
+            <h5>Actions</h5>
+            <p>
+
+                <a href="#" class="button-default">Default</a>
+                <a href="#" class="button-default button-default-stroke">Default</a>
+            </p>
+            <div class="row">
+                <div class="col-6">
+                    <p>
+                        <a href="#" class="button-default button-default-full">Default</a>
+                        <a href="#" class="button-default button-default-full button-default-stroke">Default</a>
+                    </p>     
+                </div>
+                <div class="col-6">                
+                    <p>
+                        <a href="#" class="button-default button-default-full">Default</a>
+                        <a href="#" class="button-default button-default-full button-default-stroke">Default</a>
+                    </p>
+                </div>
+            </div>
+            <p>
+                <a href="#" class="button-default button-default-small">Default</a>
+                <a href="#" class="button-default button-default-small button-default-stroke">Default</a>
+            </p>
+            
+            <h4>Tables</h4>
+            <h5>Default</h5>
+            
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>150</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>
+                            Distinctio
+                        </td>
+                        <td>
+                            qui voluptas voluptates
+                        </td>
+                        <td>
+                            29.99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Distinctio
+                        </td>
+                        <td>
+                            qui voluptas voluptates
+                        </td>
+                        <td>
+                            29.99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Distinctio
+                        </td>
+                        <td>
+                            qui voluptas voluptates
+                        </td>
+                        <td>
+                            29.99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Distinctio
+                        </td>
+                        <td>
+                            qui voluptas voluptates
+                        </td>
+                        <td>
+                            29.99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Distinctio
+                        </td>
+                        <td>
+                            qui voluptas voluptates
+                        </td>
+                        <td>
+                            29.99
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h5>Alternate</h5>
+
+            <table class="table table-alternate">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>150</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>
+                            Distinctio
+                        </td>
+                        <td>
+                            qui voluptas voluptates
+                        </td>
+                        <td>
+                            29.99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Distinctio
+                        </td>
+                        <td>
+                            qui voluptas voluptates
+                        </td>
+                        <td>
+                            29.99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Distinctio
+                        </td>
+                        <td>
+                            qui voluptas voluptates
+                        </td>
+                        <td>
+                            29.99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Distinctio
+                        </td>
+                        <td>
+                            qui voluptas voluptates
+                        </td>
+                        <td>
+                            29.99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Distinctio
+                        </td>
+                        <td>
+                            qui voluptas voluptates
+                        </td>
+                        <td>
+                            29.99
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h5>Buttons</h5>
+            <p>
+                <button class="button-default">Default</button>
+                <button class="button-default button-default-stroke">Default</button>
+            </p>
+            <p>
+                <button class="button-default button-default-full">Default</button>
+                <button class="button-default button-default-full button-default-stroke">Default</button>
+            </p>
+            <p>
+
+                <button class="button-default button-default-small">Default</button>
+                <button class="button-default button-default-small button-default-stroke">Default</button>
+            </p>
+            <input href="#" type="submit" class="button-default button-default-small button-default-stroke" value="default">
+            <h5>Forms</h5>
+
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+            
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+
+            <select name="cursos">
+                <option value="0">Selecione</option>
+                <option value="1">HTML</option>
+                <option value="2">CSS</option>
+                <option value="3">Javascript</option>
+            </select>
+
+            <label>
+                <input type="radio" value="baixa" name="prioridade">
+                Baixa prioridade
+            </label>
+            <label>
+                <input type="radio" value="media" name="prioridade">
+                Media prioridade
+            </label>
+            <label>
+                <input type="radio" value="alta" name="prioridade">
+                Alta prioridade
+            </label>
+
+            <label>
+                <input type="checkbox" name="copy" value="1">
+                Envia-me uma cópia
+            </label>
+            <label>
+                <input type="checkbox" name=human value="2">
+                Sou humano
+            </label>
+            <label for="mesagem" id="msg">Messagem:</label>
+            <textarea placeholder="digite uma messagem" id="msg"></textarea>
+            <input type="submit" class="button-default" value="Enviar">
+            <input type="reset" class="button-default-stroke" value="Limpar">
+        </section>
+        <section class="main-content-section">
+            <h3>Imagens</h3>
+            <div class="gallery-img">
+                <img src="./images/fulls/01.jpg" alt="">
+            </div>
+
+            <div class="gallery-thumb">
+                <img src="./images/thumbs/01.jpg" alt="">
+                <img src="./images/thumbs/02.jpg" alt="">
+                <img src="./images/thumbs/03.jpg" alt="">
+                <img src="./images/thumbs/04.jpg" alt="">
+                <img src="./images/thumbs/05.jpg" alt="">
+                <img src="./images/thumbs/06.jpg" alt="">
+                <img src="./images/thumbs/07.jpg" alt="">
+                <img src="./images/thumbs/08.jpg" alt="">
+                <img src="./images/thumbs/09.jpg" alt="">
+            </div>
+            <h4>Left &amp; Right</h4>
+            <p>
+                <img src="./images/avatar.jpg" alt="class-img-left">Aut ipsam quo maxime. Deserunt nemo sit voluptate nihil et. Eligendi aut perferendis ratione quam nisi. Eum quidem fuga et rerum vitae soluta earum qui occaecati. Odit repellendus iure dolor dicta ut at dicta. Quia numquam voluptatem rem ut dolor id.
+                Ea fugit eius. Doloribus consequuntur molestias modi inventore vel. Sit ipsa qui. Dicta ea et sunt et. Maxime iste labore aut ipsum et laboriosam. Debitis perferendis consequuntur atque ut et quisquam consequatur.
+            </p>
+            <p>
+                <img src="./images/avatar.jpg" alt="class-img-right">Fuga aut temporibus ducimus minima expedita. Commodi eos voluptas qui corrupti eos. Repellendus perspiciatis ut dolore molestiae esse voluptas labore qui eos. Asperiores distinctio corporis aliquid et. Ipsa quo hic voluptas accusantium rem recusandae laborum qui.
+                Et culpa eius ipsa. Occaecati aperiam eaque tempore corporis. Vitae et sint animi quas aut dolor sint deleniti.
             </p>
         </section>
     </main>
